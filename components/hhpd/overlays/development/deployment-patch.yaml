@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hhpd
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-jsqn-tenant/byoc-app-zmze/hhpd@sha256:42c540a5eae45665b69022c35538df4e5bddf1082337dd76ed2375f9ec758173
+        name: my-java-quarkus
+        resources: {}
+status: {}
